@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuclear Energy | Power of the Atom</title>
+<style>
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #0b111e;
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #18253a, #0b111e);
+  text-align: center;
+  padding: 120px 20px;
+  border-bottom: 3px solid #3cb371;
+}
+header h1 {
+  font-size: 3em;
+  color: #3cb371;
+  margin-bottom: 15px;
+}
+header p {
+  color: #d5d5d5;
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6em;
+}
+
+/* Navbar */
+nav {
+  background: #121a2a;
+  text-align: center;
+  border-bottom: 2px solid #3cb371;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  font-weight: 500;
+  transition: color 0.3s, background 0.3s;
+}
+nav a:hover, nav a.active {
+  color: #fff;
+  background: #3cb371;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+section h2 {
+  text-align: center;
+  font-size: 2.2em;
+  color: #3cb371;
+  margin-bottom: 25px;
+}
+
+/* Text content */
+section p {
+  line-height: 1.7em;
+  color: #e8e8e8;
+  font-size: 1.05em;
+  margin-bottom: 15px;
+}
+
+/* Grid / Cards */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 35px;
+}
+.card {
+  background: #162236;
+  border: 1px solid #2c3e50;
+  border-radius: 10px;
+  width: 320px;
+  padding: 25px;
+  transition: transform 0.3s, background 0.3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  background: #1f2d45;
+}
+.card h3 {
+  color: #3cb371;
+  margin-bottom: 10px;
+}
+.card p {
+  color: #ddd;
+  font-size: 0.95em;
+}
+
+/* Timeline */
+.timeline {
+  border-left: 3px solid #3cb371;
+  margin: 40px auto;
+  padding-left: 30px;
+  max-width: 800px;
+}
+.event {
+  margin-bottom: 25px;
+}
+.event h4 {
+  color: #3cb371;
+  font-size: 1.1em;
+}
+.event p {
+  color: #d8d8d8;
+  font-size: 0.95em;
+  margin-top: 5px;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+  margin-top: 40px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #2c3e50;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* Contact */
+form {
+  max-width: 480px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #3cb371;
+  background: #111a29;
+  color: #fff;
+  font-size: 1em;
+}
+button {
+  background: #3cb371;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #2e8b57;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #121a2a;
+  color: #bbb;
+  border-top: 2px solid #3cb371;
+  font-size: 0.95em;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Nuclear Energy</h1>
+  <p>The power of the atom — transforming science into clean, efficient, and sustainable energy for the modern world.</p>
+</header>
+
+<nav>
+  <a href="#intro" class="active">Intro</a>
+  <a href="#history">History</a>
+  <a href="#science">Science</a>
+  <a href="#benefits">Benefits</a>
+  <a href="#challenges">Challenges</a>
+  <a href="#future">Future</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="intro">
+  <h2>Introduction</h2>
+  <p>
+    Nuclear energy is one of the most concentrated sources of power known to humanity. It relies on the controlled fission of atoms — typically uranium or plutonium — to release immense heat that generates electricity. 
+    Unlike fossil fuels, nuclear power produces negligible carbon emissions, making it a crucial component of global clean energy strategies.
+  </p>
+  <p>
+    The debate around nuclear energy centers on a trade-off: unmatched efficiency versus the responsibility of managing radioactive materials and ensuring safety. Understanding this balance is key to shaping a sustainable energy future.
+  </p>
+</section>
+
+<section id="history">
+  <h2>Historical Timeline</h2>
+  <div class="timeline">
+    <div class="event">
+      <h4>1896 — Discovery of Radioactivity</h4>
+      <p>Henri Becquerel’s experiments revealed natural radiation, later expanded by Marie and Pierre Curie’s work on uranium and radium.</p>
+    </div>
+    <div class="event">
+      <h4>1942 — First Controlled Chain Reaction</h4>
+      <p>Enrico Fermi and his team achieved the first nuclear chain reaction at the University of Chicago, marking the dawn of the nuclear era.</p>
+    </div>
+    <div class="event">
+      <h4>1954 — First Nuclear Power Plant</h4>
+      <p>The world’s first nuclear power station began operation in Obninsk, USSR, generating electricity for peaceful use.</p>
+    </div>
+    <div class="event">
+      <h4>1970s–Present — Expansion and Regulation</h4>
+      <p>Nuclear power spread globally, accompanied by stringent international safety standards and new technologies to improve efficiency.</p>
+    </div>
+  </div>
+</section>
+
+<section id="science">
+  <h2>The Science Behind Nuclear Energy</h2>
+  <p>
+    At the heart of every reactor lies the process of <strong>nuclear fission</strong>. When a uranium-235 atom absorbs a neutron, it becomes unstable and splits into two lighter atoms, releasing more neutrons and vast amounts of heat energy.
+  </p>
+  <p>
+    This heat is transferred to water, producing steam that spins turbines to generate electricity. The reaction is controlled by inserting or removing **control rods**, which absorb excess neutrons to maintain a steady energy output.
+  </p>
+</section>
+
+<section id="benefits">
+  <h2>Benefits of Nuclear Energy</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Low Emissions</h3>
+      <p>Nuclear power plants emit almost no greenhouse gases, playing a vital role in combating climate change.</p>
+    </div>
+    <div class="card">
+      <h3>Energy Density</h3>
+      <p>A small amount of nuclear fuel produces millions of times more energy than fossil fuels, ensuring long-term energy security.</p>
+    </div>
+    <div class="card">
+      <h3>Reliability</h3>
+      <p>Unlike renewable sources that depend on weather, nuclear power provides consistent, base-load electricity 24/7.</p>
+    </div>
+  </div>
+</section>
+
+<section id="challenges">
+  <h2>Challenges and Risks</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Radioactive Waste</h3>
+      <p>Spent nuclear fuel must be carefully stored for thousands of years to prevent environmental contamination.</p>
+    </div>
+    <div class="card">
+      <h3>Safety Concerns</h3>
+      <p>Accidents like Chernobyl and Fukushima emphasize the importance of robust design, regulation, and emergency preparedness.</p>
+    </div>
+    <div class="card">
+      <h3>Public Perception</h3>
+      <p>Fear of radiation and nuclear weapons often hinders adoption, despite significant safety advancements in recent decades.</p>
+    </div>
+  </div>
+</section>
+
+<section id="future">
+  <h2>The Future of Nuclear Power</h2>
+  <p>
+    The next generation of reactors — including **Small Modular Reactors (SMRs)** and **fusion-based systems** — promises safer, cleaner, and more flexible solutions. 
+    Fusion, the process that powers stars, could one day deliver limitless, waste-free energy.
+  </p>
+  <p>
+    As global demand rises, nuclear innovation remains central to achieving a sustainable, decarbonized energy future.
+  </p>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://picsum.photos/500?random=101" alt="Reactor Core">
+    <img src="https://picsum.photos/500?random=102" alt="Control Room">
+    <img src="https://picsum.photos/500?random=103" alt="Cooling Towers">
+    <img src="https://picsum.photos/500?random=104" alt="Fusion Reactor">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact & Feedback</h2>
+  <form onsubmit="return handleSubmit(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 | Nuclear Energy Project | made by swaraj bhilare</p>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('section');
+window.addEventListener('scroll', () => {
+  sections.forEach(sec => {
+    const rect = sec.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) sec.classList.add('visible');
+  });
+});
+
+window.addEventListener('scroll', () => {
+  const scrollPos = window.scrollY + 90;
+  document.querySelectorAll('section').forEach(sec => {
+    if (scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+      document.querySelector(`nav a[href="#${sec.id}"]`).classList.add('active');
+    }
+  });
+});
+
+function handleSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  alert("Thank you, " + name + "! Your message has been sent successfully.");
+  e.target.reset();
+}
+</script>
+
+</body>
+</html>
